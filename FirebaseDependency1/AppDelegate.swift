@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import AppFramework
+import StaticFramework
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         Utils.foo()
+        StaticUtils.staticFoo()
         
         return true
     }

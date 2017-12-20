@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A850B61707F6E2226523622 /* libPods-StaticFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E04121FA1DC96582190F4A23 /* libPods-StaticFramework.a */; };
 		1E491D5701BEBA0CBEA28DE4 /* Pods_FirebaseDependency1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C9C7FC6E2D70D0678DFC6E /* Pods_FirebaseDependency1.framework */; };
+		921FDC021FEA85980046A49D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 925B6AE61FEA7F73005628D4 /* GoogleService-Info.plist */; };
+		921FDC0B1FEA86220046A49D /* StaticFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 921FDC0A1FEA86220046A49D /* StaticFramework.m */; };
+		921FDC0C1FEA86220046A49D /* StaticFramework.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 921FDC091FEA86220046A49D /* StaticFramework.h */; };
+		921FDC121FEA868C0046A49D /* StaticUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921FDC111FEA868C0046A49D /* StaticUtils.swift */; };
+		921FDC131FEA86AE0046A49D /* libStaticFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 921FDC071FEA86220046A49D /* libStaticFramework.a */; };
+		921FDC141FEA86B70046A49D /* libStaticFramework.a in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 921FDC071FEA86220046A49D /* libStaticFramework.a */; };
 		923B92E4725DCE369B707DB8 /* Pods_AppFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D7EC1F7E73C9110DD229D4 /* Pods_AppFramework.framework */; };
 		925B6AD51FEA7F20005628D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925B6AD41FEA7F20005628D4 /* AppDelegate.swift */; };
 		925B6AD71FEA7F20005628D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925B6AD61FEA7F20005628D4 /* ViewController.swift */; };
@@ -32,12 +39,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		921FDC051FEA86220046A49D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				921FDC0C1FEA86220046A49D /* StaticFramework.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		925B6AF91FEA804B005628D4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				921FDC141FEA86B70046A49D /* libStaticFramework.a in Embed Frameworks */,
 				925B6AF51FEA804B005628D4 /* AppFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -46,10 +64,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		11A2FB2CF791A4292BD554C1 /* Pods-StaticFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StaticFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StaticFramework/Pods-StaticFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		195406AA5DF41DCA8161DE04 /* Pods-FirebaseDependency1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseDependency1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseDependency1/Pods-FirebaseDependency1.debug.xcconfig"; sourceTree = "<group>"; };
 		28D7EC1F7E73C9110DD229D4 /* Pods_AppFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		806D6ACDAFB3E4E1EE610750 /* Pods-AppFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppFramework/Pods-AppFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		85C9C7FC6E2D70D0678DFC6E /* Pods_FirebaseDependency1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseDependency1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		921FDC071FEA86220046A49D /* libStaticFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStaticFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		921FDC091FEA86220046A49D /* StaticFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticFramework.h; sourceTree = "<group>"; };
+		921FDC0A1FEA86220046A49D /* StaticFramework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticFramework.m; sourceTree = "<group>"; };
+		921FDC101FEA868C0046A49D /* StaticFramework-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StaticFramework-Bridging-Header.h"; sourceTree = "<group>"; };
+		921FDC111FEA868C0046A49D /* StaticUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticUtils.swift; sourceTree = "<group>"; };
 		925B6AD11FEA7F20005628D4 /* FirebaseDependency1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseDependency1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		925B6AD41FEA7F20005628D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		925B6AD61FEA7F20005628D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,15 +86,26 @@
 		925B6AEF1FEA804B005628D4 /* AppFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppFramework.h; sourceTree = "<group>"; };
 		925B6AF01FEA804B005628D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		925B6AFA1FEA8062005628D4 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		99822983200715480ECA1B0D /* Pods-StaticFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StaticFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-StaticFramework/Pods-StaticFramework.release.xcconfig"; sourceTree = "<group>"; };
 		C3E4DE63FAD8C63DF0EEF7C0 /* Pods-AppFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppFramework/Pods-AppFramework.release.xcconfig"; sourceTree = "<group>"; };
 		D1E932262135CC0AAFB8382A /* Pods-FirebaseDependency1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseDependency1.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseDependency1/Pods-FirebaseDependency1.release.xcconfig"; sourceTree = "<group>"; };
+		E04121FA1DC96582190F4A23 /* libPods-StaticFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StaticFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		921FDC041FEA86220046A49D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A850B61707F6E2226523622 /* libPods-StaticFramework.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		925B6ACE1FEA7F20005628D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921FDC131FEA86AE0046A49D /* libStaticFramework.a in Frameworks */,
 				1E491D5701BEBA0CBEA28DE4 /* Pods_FirebaseDependency1.framework in Frameworks */,
 				925B6AF41FEA804B005628D4 /* AppFramework.framework in Frameworks */,
 			);
@@ -92,6 +127,7 @@
 			children = (
 				85C9C7FC6E2D70D0678DFC6E /* Pods_FirebaseDependency1.framework */,
 				28D7EC1F7E73C9110DD229D4 /* Pods_AppFramework.framework */,
+				E04121FA1DC96582190F4A23 /* libPods-StaticFramework.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -103,8 +139,21 @@
 				D1E932262135CC0AAFB8382A /* Pods-FirebaseDependency1.release.xcconfig */,
 				806D6ACDAFB3E4E1EE610750 /* Pods-AppFramework.debug.xcconfig */,
 				C3E4DE63FAD8C63DF0EEF7C0 /* Pods-AppFramework.release.xcconfig */,
+				11A2FB2CF791A4292BD554C1 /* Pods-StaticFramework.debug.xcconfig */,
+				99822983200715480ECA1B0D /* Pods-StaticFramework.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		921FDC081FEA86220046A49D /* StaticFramework */ = {
+			isa = PBXGroup;
+			children = (
+				921FDC091FEA86220046A49D /* StaticFramework.h */,
+				921FDC0A1FEA86220046A49D /* StaticFramework.m */,
+				921FDC111FEA868C0046A49D /* StaticUtils.swift */,
+				921FDC101FEA868C0046A49D /* StaticFramework-Bridging-Header.h */,
+			);
+			path = StaticFramework;
 			sourceTree = "<group>";
 		};
 		925B6AC81FEA7F20005628D4 = {
@@ -112,6 +161,7 @@
 			children = (
 				925B6AD31FEA7F20005628D4 /* FirebaseDependency1 */,
 				925B6AEE1FEA804B005628D4 /* AppFramework */,
+				921FDC081FEA86220046A49D /* StaticFramework */,
 				925B6AD21FEA7F20005628D4 /* Products */,
 				905E389713A0E5052CBE13F1 /* Pods */,
 				57B3C5EAE46D3BBEDD92F265 /* Frameworks */,
@@ -123,6 +173,7 @@
 			children = (
 				925B6AD11FEA7F20005628D4 /* FirebaseDependency1.app */,
 				925B6AED1FEA804B005628D4 /* AppFramework.framework */,
+				921FDC071FEA86220046A49D /* libStaticFramework.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,6 +216,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		921FDC061FEA86220046A49D /* StaticFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 921FDC0D1FEA86220046A49D /* Build configuration list for PBXNativeTarget "StaticFramework" */;
+			buildPhases = (
+				2CC83DEFD1A41C914254A991 /* [CP] Check Pods Manifest.lock */,
+				921FDC031FEA86220046A49D /* Sources */,
+				921FDC041FEA86220046A49D /* Frameworks */,
+				921FDC051FEA86220046A49D /* CopyFiles */,
+				09038429A807ED516E80A2EA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StaticFramework;
+			productName = StaticFramework;
+			productReference = 921FDC071FEA86220046A49D /* libStaticFramework.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		925B6AD01FEA7F20005628D4 /* FirebaseDependency1 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 925B6AE31FEA7F21005628D4 /* Build configuration list for PBXNativeTarget "FirebaseDependency1" */;
@@ -217,6 +287,11 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Oron Ben Zvi";
 				TargetAttributes = {
+					921FDC061FEA86220046A49D = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
 					925B6AD01FEA7F20005628D4 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -243,6 +318,7 @@
 			targets = (
 				925B6AD01FEA7F20005628D4 /* FirebaseDependency1 */,
 				925B6AEC1FEA804B005628D4 /* AppFramework */,
+				921FDC061FEA86220046A49D /* StaticFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -263,12 +339,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921FDC021FEA85980046A49D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		09038429A807ED516E80A2EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StaticFramework/Pods-StaticFramework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		285311D341E1CBC63741D3BD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,6 +373,24 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-FirebaseDependency1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CC83DEFD1A41C914254A991 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StaticFramework-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -309,8 +419,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FirebaseDependency1/Pods-FirebaseDependency1-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac-framework/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb-framework/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -358,6 +468,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		921FDC031FEA86220046A49D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921FDC0B1FEA86220046A49D /* StaticFramework.m in Sources */,
+				921FDC121FEA868C0046A49D /* StaticUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		925B6ACD1FEA7F20005628D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -405,6 +524,41 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		921FDC0E1FEA86220046A49D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11A2FB2CF791A4292BD554C1 /* Pods-StaticFramework.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZ8GG366SX;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "StaticFramework/StaticFramework-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		921FDC0F1FEA86220046A49D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99822983200715480ECA1B0D /* Pods-StaticFramework.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZ8GG366SX;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "StaticFramework/StaticFramework-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		925B6AE11FEA7F21005628D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -602,6 +756,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		921FDC0D1FEA86220046A49D /* Build configuration list for PBXNativeTarget "StaticFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				921FDC0E1FEA86220046A49D /* Debug */,
+				921FDC0F1FEA86220046A49D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		925B6ACC1FEA7F20005628D4 /* Build configuration list for PBXProject "FirebaseDependency1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

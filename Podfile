@@ -14,5 +14,9 @@ target 'AppFramework' do
   use_frameworks!
 
   # Pods for AppFramework
+  # pod 'Firebase/Core'
+end
+
+target 'StaticFramework' do
   pod 'Firebase/Core'
 end
