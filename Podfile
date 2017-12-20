@@ -9,3 +9,10 @@ target 'FirebaseDependency1' do
   pod 'Firebase/Core'
 
 end
+
+target 'AppFramework' do
+  use_frameworks!
+
+  # Pods for AppFramework
+  pod 'Firebase/Core'
+end
